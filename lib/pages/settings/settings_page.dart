@@ -56,7 +56,7 @@ class _SettingsPageState extends State<SettingsPage> implements PopEntry {
     "APP",
     "Network",
     "About",
-    "Debug"
+ //   "Debug"
   ];
 
   final icons = <IconData>[
@@ -67,7 +67,7 @@ class _SettingsPageState extends State<SettingsPage> implements PopEntry {
     Icons.apps,
     Icons.public,
     Icons.info,
-    Icons.bug_report,
+ //   Icons.bug_report,
   ];
 
   double offset = 0;
@@ -356,7 +356,7 @@ class _SettingsPageState extends State<SettingsPage> implements PopEntry {
       4 => const AppSettings(),
       5 => const NetworkSettings(),
       6 => const AboutSettings(),
-      7 => const DebugPage(),
+     // 7 => const DebugPage(),
       _ => throw UnimplementedError()
     };
   }
