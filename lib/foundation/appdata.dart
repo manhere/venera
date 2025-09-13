@@ -136,8 +136,8 @@ class Settings with ChangeNotifier {
   Settings._create();
 
   final _data = <String, dynamic>{
-    'comicDisplayMode': 'detailed', // detailed, brief
-    'comicTileScale': 1.00, // 0.75-1.25
+    'comicDisplayMode': 'brief', // detailed, brief
+    'comicTileScale': 0.75, // 0.75-1.25
     'color': 'system', // red, pink, purple, green, orange, blue
     'theme_mode': 'system', // light, dark, system
     'newFavoriteAddTo': 'end', // start, end
@@ -150,9 +150,9 @@ class Settings with ChangeNotifier {
     'showFavoriteStatusOnTile': true,
     'showHistoryStatusOnTile': false,
     'blockedWords': [],
-    'defaultSearchTarget': null,
+    'defaultSearchTarget': "_aggregated_",
     'autoPageTurningInterval': 5, // in seconds
-    'readerMode': 'galleryLeftToRight', // values of [ReaderMode]
+    'readerMode': 'continuousTopToBottom', // values of [ReaderMode]
     'readerScreenPicNumberForLandscape': 1, // 1 - 5
     'readerScreenPicNumberForPortrait': 1, // 1 - 5
     'enableTapToTurnPages': true,
@@ -267,4 +267,5 @@ function processImage(image, cid, eid, page, sourceKey) {
 ''';
 
 const _defaultSourceListUrl =
-    "https://git.nyne.dev/nyne/venera-configs/raw/branch/main/index.json";
+    // "https://git.nyne.dev/nyne/venera-configs/raw/branch/main/index.json";
+    "http://39.98.151.242:7001/venera-configs/index.json";
