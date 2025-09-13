@@ -44,6 +44,7 @@ class _AboutSettingsState extends State<AboutSettings> {
             const SizedBox(height: 8),
           ],
         ).toSliver(),
+        /*
         ListTile(
           title: Text("Check for updates".tl),
           trailing: Button.filled(
@@ -79,6 +80,7 @@ class _AboutSettingsState extends State<AboutSettings> {
             launchUrlString("https://t.me/venera_release");
           },
         ).toSliver(),
+        */
       ],
     );
   }
