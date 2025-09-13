@@ -404,7 +404,7 @@ class _ComicSourceListState extends State<_ComicSourceList> {
     return ListView.builder(
       itemCount: (json?.length ?? 1) + 1,
       itemBuilder: (context, index) {
-        if (false && index == 0) {
+        if (index == 0) {
           return Container(
             margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             decoration: BoxDecoration(
@@ -417,6 +417,7 @@ class _ComicSourceListState extends State<_ComicSourceList> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                /*
                 ListTile(
                   leading: Icon(Icons.source_outlined),
                   title: Text("Repo URL".tl),
@@ -458,6 +459,10 @@ class _ComicSourceListState extends State<_ComicSourceList> {
                   ],
                 ),
                 const SizedBox(height: 16),
+                */
+                Text(
+                  "请选择添加下面的漫画源\n打不开页面或报错可删除源重新添加",
+                ).paddingLeft(16),
               ],
             ),
           );
