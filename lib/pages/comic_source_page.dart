@@ -253,11 +253,13 @@ class _BodyState extends State<_Body> {
                   label: Text("Use a config file".tl),
                   onPressed: _selectFile,
                 ),
+                /*
                 FilledButton.tonalIcon(
                   icon: Icon(Icons.help_outline),
                   label: Text("Help".tl),
                   onPressed: help,
                 ),
+                */
                 _CheckUpdatesButton(),
               ],
             ).paddingHorizontal(12).paddingVertical(8),
@@ -402,7 +404,7 @@ class _ComicSourceListState extends State<_ComicSourceList> {
     return ListView.builder(
       itemCount: (json?.length ?? 1) + 1,
       itemBuilder: (context, index) {
-        if (index == 0) {
+        if (false && index == 0) {
           return Container(
             margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             decoration: BoxDecoration(
